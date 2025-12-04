@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #191919;
+    color: #FFFFFF;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 0 70px 0 70px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: #FFFFFF;
+    gap: 40px;
+    cursor: pointer;
+}
+
+.main {
+    margin: 40px 70px;
+}
+
+.main-block {
+    display: flex;
+}
+
+.main-img-block img {
+    border-radius: 12px;
+}
+
+.main-info-block {
+    padding: 315px 60px 130px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.main-img-block,
+.main-info-block {
+    flex: 1;
+}
+
+.main-info-block h1 {
+    font-size: 70px;
+    letter-spacing: 3.2px;
+    line-height: 88px;
+    font-weight: 200;
+}
+
+.accent {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.music-platform-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.music-platforms ul {
+    display: flex;
+    gap: 15px;
+}
