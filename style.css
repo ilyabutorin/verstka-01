@@ -36,6 +36,8 @@ nav ul {
     cursor: pointer;
 }
 
+/* main */
+
 .main {
     margin: 40px 70px;
 }
@@ -81,4 +83,134 @@ nav ul {
 .music-platforms ul {
     display: flex;
     gap: 15px;
+}
+
+/* episodes-section */
+
+.episodes-section {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 150px;
+}
+
+.episodes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.episodes-header h2 {
+    font-size: 64px;
+    font-weight: 200;
+    letter-spacing: 2.88px;
+}
+
+.ep-btn {
+    background-color: #118DA8;
+    color: #FFFFFF;
+    border-radius: 6px;
+    padding:  15px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.episodes-wrapper {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.card {
+    background-color: #000;
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    gap: 50px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card label {
+    background-color: #191919;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.card span {
+    color: #118DA8;
+    font-size: 17px;
+}
+
+.card h2 {
+    font-size: 64px;
+    font-weight: 300;
+    letter-spacing: 2.56px;
+}
+
+.card p {
+    color: #FFFFFF;
+    opacity: 70%;
+    font-size: 22px;
+    font-weight: 200;
+}
+
+/* host-section */
+
+.host-section {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 50px;
+}
+
+.host-wrapper {
+    display: flex;
+    gap: 60px;
+}
+
+.host-link {
+    background-color: #118DA8;
+    border-radius: 100%;
+    width: 110px;
+    height: 110px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.host-wrapper-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.host-wrapper-info span {
+    color: #118DA8;
+    font-size: 18px;
+}
+
+.host-wrapper-info h2 {
+    font-size: 64px;
+    font-weight: 300;
+    letter-spacing: 2.88px;
+}
+
+.host-wrapper-info p {
+    color: #FFFFFF;
+    opacity: 70%;
+    font-size: 22px;
+}
+
+.host-wrapper-img img {
+    border-radius: 12%;
 }
