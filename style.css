@@ -110,7 +110,7 @@ nav ul {
     background-color: #118DA8;
     color: #FFFFFF;
     border-radius: 6px;
-    padding:  15px 20px;
+    padding: 15px 20px;
     cursor: pointer;
     border: none;
 }
@@ -273,4 +273,95 @@ nav ul {
 
 .sub-container-form button {
     align-self: flex-start;
+}
+
+/* review-section */
+
+.review-section {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.reviews-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.review-block {
+    background-color: #000000;
+    border-radius: 30px;
+    flex: 1 1 30%;
+    padding: 50px;
+}
+
+.review-block h2 {
+    font-size: 36px;
+    font-weight: 200;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.review-block span {
+    font-size: 24px;
+    font-weight: 100;
+    color: #FFFFFF;
+    opacity: 70%;
+}
+
+/* footer */
+
+footer {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-wrapper {
+    display: flex;
+}
+
+.foot-castaway {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.foot-social {
+    display: flex;
+    gap: 15px;
+}
+
+.foot-navi {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    flex: 1;
+    font-size: 17px;
+    color: #FFFFFF;
+    gap: 10px;
+}
+
+.foot-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    flex: 1;
+    font-size: 17px;
+    color: #FFFFFF;
+    gap: 10px;
+}
+
+.foot-platforms {
+    flex: 2;
+}
+
+.foot-platforms ul{
+    display: flex;
+    gap: 15px;
 }
