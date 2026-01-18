@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth; 
+}
+
 body {
     font-family: "DM Sans", sans-serif;
     background-color: #191919;
@@ -30,15 +34,23 @@ nav {
 nav ul {
     display: flex;
     align-items: center;
+    gap: 40px;
+}
+
+nav ul a {
+    text-decoration: none;
     font-size: 17px;
     color: #FFFFFF;
-    gap: 40px;
-    cursor: pointer;
+}
+
+nav ul a:hover {
+    color: #118DA8;
+    transition: color 0.3s ease;
 }
 
 /* main */
 
-.main {
+#main {
     margin: 40px 70px;
 }
 
@@ -46,8 +58,24 @@ nav ul {
     display: flex;
 }
 
+.main-img-block {
+    position: relative;
+}
+
 .main-img-block img {
     border-radius: 12px;
+}
+
+.main-img-block::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -30px;
+    width: 60px;
+    height: 65px;
+    background-image: url('./assets/images/vector-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .main-info-block {
@@ -55,6 +83,22 @@ nav ul {
     display: flex;
     flex-direction: column;
     gap: 90px;
+}
+
+.next-word {
+    position: relative;
+}
+
+.next-word::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-image: url('./assets/images/vector-2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .main-img-block,
@@ -85,9 +129,17 @@ nav ul {
     gap: 15px;
 }
 
+.music-platforms a img {
+    transition: transform 0.3s ease;
+}
+
+.music-platforms a:hover img {
+    transform: translateY(-5px);
+}
+
 /* episodes-section */
 
-.episodes-section {
+#episodes-section {
     padding-left: 70px;
     padding-right: 70px;
     padding-bottom: 150px;
@@ -112,7 +164,17 @@ nav ul {
     border-radius: 6px;
     padding: 15px 20px;
     cursor: pointer;
-    border: none;
+    border: 2px solid #118DA8;
+    
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border 0.3s ease;
+}
+
+.ep-btn:hover {
+    background-color: transparent;
+    border: 2px solid #118DA8;
 }
 
 .episodes-wrapper {
@@ -165,7 +227,7 @@ nav ul {
 
 /* host-section */
 
-.host-section {
+#host-section {
     padding-left: 70px;
     padding-right: 70px;
     padding-bottom: 50px;
@@ -185,6 +247,11 @@ nav ul {
     display: flex;
     justify-content: center;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.host-link:hover {
+    transform: rotate(90deg);
 }
 
 .host-wrapper-info {
@@ -217,11 +284,12 @@ nav ul {
 
 /* subscribe-section */
 
-.subscribe-section {
+#subscribe-section {
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 100px;
     padding-bottom: 100px;
+    position: relative;
 }
 
 .subscribe-container {
@@ -230,6 +298,18 @@ nav ul {
     background-color: #000000;
     border-radius: 30px;
     padding: 60px;
+}
+
+#subscribe-section::after {
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-image: url('./assets/images/vector-3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .sub-container-info,
@@ -261,7 +341,7 @@ nav ul {
 
 .sub-container-form input {
     background-color: #191919;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 5px;
     color: #FFFFFF;
     opacity: 70%;
@@ -269,6 +349,12 @@ nav ul {
     padding-left: 20px;
     padding-top: 25px;
     padding-bottom: 25px;
+    transition: border-color 0.5s ease;
+}
+
+.sub-container-form input:focus {
+    border-color: #454444;  
+    outline: none; 
 }
 
 .sub-container-form button {
@@ -277,7 +363,7 @@ nav ul {
 
 /* review-section */
 
-.review-section {
+#review-section {
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 100px;
@@ -337,14 +423,31 @@ footer {
     gap: 15px;
 }
 
+.foot-social a img {
+    transition: transform 0.3s ease;
+}
+
+.foot-social a:hover img {
+    transform: translateY(-5px);
+}
+
 .foot-navi {
     display: flex;
     flex-direction: column;
     list-style: none;
     flex: 1;
     font-size: 17px;
-    color: #FFFFFF;
     gap: 10px;
+}
+
+.foot-navi a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.foot-navi a:hover {
+    color: #118DA8;
+    transition: color 0.3s ease;
 }
 
 .foot-links {
@@ -353,8 +456,17 @@ footer {
     list-style: none;
     flex: 1;
     font-size: 17px;
-    color: #FFFFFF;
     gap: 10px;
+}
+
+.foot-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+}
+
+.foot-links a:hover {
+    color: #118DA8;
 }
 
 .foot-platforms {
@@ -363,5 +475,13 @@ footer {
 
 .foot-platforms ul{
     display: flex;
-    gap: 15px;
+    gap: 15px      ;
+}
+
+.foot-platforms a img {
+    transition: transform 0.3s ease;
+}
+
+.foot-platforms a:hover img {
+    transform: translateY(-5px);
 }
