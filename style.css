@@ -621,3 +621,35 @@ footer {
         grid-column: 1 / -1;
     }
 }
+
+/* MOBILE 576px */
+
+@media screen and (max-width: 576px){
+    .main-info-block {
+        font-size: 40px;
+    }
+
+    .episodes-header {
+        padding-top: 10px;
+        font-size: 38px;
+    }
+
+    .card-info p {
+        font-size: 20px;
+    }
+
+    .host-link img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .reviews-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
